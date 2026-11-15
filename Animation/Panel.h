@@ -23,7 +23,11 @@ private:
 			}
 			buffer += "\n";
 		}
+		#ifdef _WIN32
 		system("CLS");
+		#else
+		printf("\033[H\033[2J"); // ANSI clear screen: CLS is a Windows-only command
+		#endif
 		printf(buffer.c_str());
 		//cout << buffer;
 	}

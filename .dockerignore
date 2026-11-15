@@ -1,0 +1,10 @@
+.git
+.env
+compose-launcher
+.vs
+Debug
+Release
+x64
+Animation/Debug
+Animation/Release
+Animation/x64

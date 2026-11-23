@@ -1,0 +1,8 @@
+# An interactive console program, not a server: it waits for a choice on stdin, then
+# animates in the terminal until stopped. It publishes no ports.
+services:
+  animation:
+    build: .
+    stdin_open: true
+    tty: true
+    mem_limit: 64m
